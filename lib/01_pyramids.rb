@@ -26,11 +26,11 @@ def full_pyramid(height)
 end
 
 def	wtf_pyramid(height)
-	x = height - 1
+	x = (height / 2)
 	y = (x * 2) - 1
-	full_pyramid(height)
+	full_pyramid((height / 2) + 1)
 	while x > 0
-		print " " * (height - x)
+		print " " * (1 	+ (height / 2) - x)
 		puts "#" * y
 		y -= 2
 		x -= 1
